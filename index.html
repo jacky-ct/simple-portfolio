@@ -7,18 +7,55 @@
     />
     <meta charset="utf-8" />
     <title>Jacky</title>
+    <script
+      src="https://unpkg.com/htmx.org@1.9.12"
+      integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styling.css" />
   </head>
   <body>
     <div class="header">Jacky</div>
     <br />
     <div class="linksection">
-      <span class="links"><a href="/">Home</a></span>
-      <span class="links"><a href="/work">Work</a></span>
-      <span class="links"><a href="/projects">Projects</a></span>
-      <span class="links"><a href="/readinglist">My reading list</a></span>
+      <span class="links"
+        ><a
+          hx-post="/index"
+          hx-trigger="click"
+          hx-target="#content-body"
+          hx-swap="outerHTML"
+          >Home</a
+        ></span
+      >
+      <span class="links"
+        ><a
+          hx-post="/work"
+          hx-trigger="click"
+          hx-target="#content-body"
+          hx-swap="outerHTML"
+          >Work</a
+        ></span
+      >
+      <span class="links"
+        ><a
+          hx-post="/projects"
+          hx-trigger="click"
+          hx-target="#content-body"
+          hx-swap="outerHTML"
+          >Projects</a
+        ></span
+      >
+      <span class="links"
+        ><a
+          hx-post="/readinglist"
+          hx-trigger="click"
+          hx-target="#content-body"
+          hx-swap="outerHTML"
+          >My reading list</a
+        ></span
+      >
     </div>
-    <div class="content">
+    <div class="content" id="content-body">
       <p>
         Developer at
         <a href="https://www.renewable-fs.com/">Renewable Fields Services</a>
