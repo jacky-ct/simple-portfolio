@@ -1,7 +1,8 @@
 body {
   background-color: #1a2628;
   font-family: monospace;
-  width: 45%;
+  width: 100%;
+  max-width: 900px;
   margin: auto;
   padding: 30px;
   font-size: 18px;
@@ -28,6 +29,7 @@ p {
   display: inline-block;
   width: auto;
   padding: 7px;
+  font-size: 18px;
 }
 
 .linksection {
