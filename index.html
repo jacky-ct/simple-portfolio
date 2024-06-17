@@ -15,7 +15,15 @@
     <link rel="stylesheet" href="styling.css" />
   </head>
   <body>
-    <div class="header">Jacky</div>
+    <div
+      class="header"
+      hx-get="/index"
+      hx-trigger="click"
+      hx-target="#content-body"
+      hx-swap="@outerHTML"
+    >
+      Jacky
+    </div>
     <br />
     <div class="linksection">
       <span class="links"
