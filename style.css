@@ -11,6 +11,7 @@ body {
 a:link {
   color: #075a56;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 a:visited {
