@@ -1,77 +1,49 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧡</text></svg>"
-    />
-    <meta charset="utf-8" />
-    <title>Jacky</title>
-    <script
-      src="https://unpkg.com/htmx.org@1.9.12"
-      integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styling.css" />
-  </head>
-  <body>
-    <div class="header">Jacky</div>
-    <br />
-    <div class="linksection">
-      <span class="links"
-        ><a
-          hx-get="/index"
-          hx-trigger="click"
-          hx-target="#content-body"
-          hx-swap="outerHTML"
-          >Home</a
-        ></span
-      >
-      <span class="links"
-        ><a
-          hx-get="/work"
-          hx-trigger="click"
-          hx-target="#content-body"
-          hx-swap="outerHTML"
-          >Work</a
-        ></span
-      >
-      <span class="links"
-        ><a
-          hx-get="/projects"
-          hx-trigger="click"
-          hx-target="#content-body"
-          hx-swap="outerHTML"
-          >Projects</a
-        ></span
-      >
-      <span class="links"
-        ><a
-          hx-get="/readinglist"
-          hx-trigger="click"
-          hx-target="#content-body"
-          hx-swap="outerHTML"
-          >My reading list</a
-        ></span
-      >
-    </div>
-    <div class="content" id="content-body">
-      <p>
-        Developer at
-        <a href="https://www.renewable-fs.com/">Renewable Fields Services</a>
-        building a full-stack solution for drone diagnostics of wind turbines.
-      </p>
-      <p>
-        Also a bad (see: peak 6b+) boulderer with aspirations of sucking less, a
-        competitive fighting games player, and an avid gym-goer - albeit mostly
-        with the goal of being a better climber.
-      </p>
-      <p>
-        Any developing I do in my own time is generally with the goal of
-        understanding the builing blocks of more complicated tools that I use at
-        work.
-      </p>
-      <p>vim/tmux/macos enjoyer (btw)</p>
-    </div>
-  </body>
+
+<head>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧡</text></svg>" />
+  <meta charset="utf-8" />
+  <title>Jacky</title>
+  <script src="https://unpkg.com/htmx.org@1.9.12"
+    integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="header"><a hx-get="/index" hx-trigger="click" hx-target="#content-body" hx-swap="outerHTML">Jacky</a>
+  </div>
+  <br />
+  <div class="linksection">
+    <span class="links"><a hx-get="/index" hx-trigger="click" hx-target="#content-body"
+        hx-swap="outerHTML">Home</a></span>
+    <span class="links"><a hx-get="/work" hx-trigger="click" hx-target="#content-body"
+        hx-swap="outerHTML">Work</a></span>
+    <span class="links"><a hx-get="/projects" hx-trigger="click" hx-target="#content-body"
+        hx-swap="outerHTML">Projects</a></span>
+    <span class="links"><a hx-get="/readinglist" hx-trigger="click" hx-target="#content-body" hx-swap="outerHTML">My
+        reading list</a></span>
+  </div>
+  <div class="content" id="content-body">
+    <p>
+      Developer at
+      <a href="https://www.renewable-fs.com/">Renewable Fields Services</a>
+      building a full-stack solution for drone diagnostics of wind turbines.
+    </p>
+    <p>
+      Also a bad (see: peak 6b+) boulderer with aspirations of sucking less, a
+      competitive fighting games player, and an avid gym-goer - albeit mostly
+      with the goal of being a better climber.
+    </p>
+    <p>
+      Any developing I do in my own time is generally with the goal of
+      understanding the builing blocks of more complicated tools that I use at
+      work.
+    </p>
+    <p>vim/tmux/macos enjoyer (btw)</p>
+  </div>
+</body>
+
 </html>
