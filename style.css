@@ -1,51 +1,51 @@
 body {
-  background-color: #1a2628;
-  font-family: monospace;
-  width: 100%;
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-  font-size: 18px;
+    background-color: #1a2628;
+    font-family: monospace;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    font-size: 18px;
 }
 
 a:link {
-  color: #075a56;
-  text-decoration: underline;
-  cursor: pointer;
+    color: #075a56;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 a:visited {
-  color: #075a56;
-  text-decoration: underline;
+    color: #075a56;
+    text-decoration: underline;
 }
 
 p {
-  line-height: 1.8;
-  padding-block: 5px;
+    line-height: 1.8;
+    padding-block: 5px;
 }
 
 .header {
-  background-color: #faf4d3;
-  color: #1a2628;
-  display: inline-block;
-  width: auto;
-  padding: 7px;
-  font-size: 18px;
+    background-color: #faf4d3;
+    color: #1a2628;
+    display: inline-block;
+    width: auto;
+    padding: 7px;
+    font-size: 18px;
 }
 
 .linksection {
-  padding-block: 20px;
-  .links {
-    color: #075a56;
-    text-decoration: underline;
-    padding-right: 10px;
-    font-size: 16px;
-  }
+    padding-block: 20px;
+    .links {
+        color: #075a56;
+        text-decoration: underline;
+        padding-right: 10px;
+        font-size: 16px;
+    }
 }
 
 .content {
-  color: #faf4d3;
-  border: 1px solid #075a56;
-  padding: 30px;
-  font-size: 16px;
+    color: #faf4d3;
+    border: 1px solid #075a56;
+    padding: 30px;
+    font-size: 16px;
 }
